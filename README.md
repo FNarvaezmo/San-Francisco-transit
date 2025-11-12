@@ -47,12 +47,24 @@ python 04_train_models.py
 streamlit run 07_advanced_dashboard.py
 ## 📁 Estructura del Proyecto
 
-San-Francisco-transit/ ├── 01_data_ingestion_511.py # Ingesta de datos API 511.org ├── 02_exploratory_analysis.py # Análisis exploratorio (EDA) ├── 03_data_preprocessing.py # Feature engineering (25+ features) ├── 04_train_models.py # Entrenamiento ML (6 modelos) ├── 06_eta_and_alerts.py # Sistema de ETA y alertas ├── 07_advanced_dashboard.py # Dashboard Streamlit avanzado ├── data/processed/ # Datasets procesados ├── models/ # Modelos entrenados (.pkl) ├── plots/ # Visualizaciones ├── requirements.txt └── README.md
+San-Francisco-transit/
+├── 01_data_ingestion_511.py # Ingesta de datos API 511.org
+├── 02_exploratory_analysis.py # Análisis exploratorio (EDA)
+├── 03_data_preprocessing.py # Feature engineering (25+ features)
+├── 04_train_models.py # Entrenamiento ML (6 modelos)
+├── 06_eta_and_alerts.py # Sistema de ETA y alertas
+├── 07_advanced_dashboard.py # Dashboard Streamlit avanzado
+├── data/processed/ # Datasets procesados
+├── models/ # Modelos entrenados (.pkl)
+ ├── plots/ # Visualizaciones
+├── requirements.txt
+ └── README.md
 
 ## 🔬 Metodología
 
 ### Cálculo de Velocidades (Haversine)
-La API 511.org **NO proporciona velocidades**, solo coordenadas GPS. Calculamos velocidades usando la fórmula de Haversine para distancias esféricas.
+La API 511.org **NO proporciona velocidades**, solo coordenadas GPS.
+Calculamos velocidades usando la fórmula de Haversine para distancias esféricas.
 
 ### Feature Engineering
 **25+ features creados:**
@@ -85,11 +97,13 @@ cd San-Francisco-transit
 python3 -m venv env_data
 source env_data/bin/activate
 pip install -r requirements.txt
+
 💡 Casos de Uso
 Pasajeros: Predecir tiempos de llegada reales
 Agencias: Detectar congestiones y optimizar rutas
 Planificación urbana: Analizar patrones de tráfico
 Apps de navegación: Integrar predicciones ML
+
 🚧 Mejoras Futuras
  Deployment en cloud (AWS/Heroku)
  API REST con FastAPI
@@ -97,6 +111,7 @@ Apps de navegación: Integrar predicciones ML
  Modelo LSTM para series temporales
  App móvil
  Docker containerization
+
 👥 Autores
 Francisco Narvaez M
 GitHub: @FNarvaezmo
